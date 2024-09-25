@@ -77,14 +77,14 @@ code .
 This code generates visualisations from radar data in NetCDF format. The steps for using the main function are described below:
 
 Input arguments:
-    - input_file: NetCDF (.nc) format file containing the radar data.
+- input_file: NetCDF (.nc) format file containing the radar data.
 
 Functionality:
 
 The code generates two main graphs:
 
-    - Equivalent Reflectivity: Displays radar reflectivity in decibels (dBZ), allowing visualisation of precipitation intensity.
-    - Falling Speed: Displays the falling speed of hydrometeors in metres per second (m/s).
+- Equivalent Reflectivity: Displays radar reflectivity in decibels (dBZ), allowing visualisation of precipitation intensity.
+- Falling Speed: Displays the falling speed of hydrometeors in metres per second (m/s).
 
 Customisation:
 
@@ -94,8 +94,8 @@ Example
 
 To visualise radar data:
 
-    Provide the NetCDF file as input and the output directory where the graphics will be saved.
-    The generated graphs will include reflectivity and fall speed of hydrometeors.
+- Provide the NetCDF file as input and the output directory where the graphics will be saved.
+- The generated graphs will include reflectivity and fall speed of hydrometeors.
 
 
 ```sh
