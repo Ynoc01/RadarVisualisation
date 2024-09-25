@@ -73,4 +73,38 @@ for Visual studio is similar to spyder but you don't need to load a kernel to us
 code .
 ```
 
+# Usage
+This code generates visualisations from radar data in NetCDF format. The steps for using the main function are described below:
+
+Input arguments:
+    - input_file: NetCDF (.nc) format file containing the radar data.
+
+Functionality:
+
+The code generates two main graphs:
+
+    - Equivalent Reflectivity: Displays radar reflectivity in decibels (dBZ), allowing visualisation of precipitation intensity.
+    - Falling Speed: Displays the falling speed of hydrometeors in metres per second (m/s).
+
+Customisation:
+
+The code allows customisation of the colours used in the graphics, which facilitates the visual identification of meteorological phenomena such as convection, liquid rain, and ice crystals.
+
+Example
+
+To visualise radar data:
+
+    Provide the NetCDF file as input and the output directory where the graphics will be saved.
+    The generated graphs will include reflectivity and fall speed of hydrometeors.
+
+
+```sh
+new_time = pd.to_datetime(ds.time.values)
+xlim = [new_time[0], new_time[-1]
+heights = ds.height[0, :] + 500
+Ze = ds['attenuated_radar_reflectivity'].T
+Vf = ds['fall_velocity'].T
+plot_mrr2(xlim, pd.to_datetime(ds.time.values), heights, Ze, Vf, hora_local=False)
+```
+
 
