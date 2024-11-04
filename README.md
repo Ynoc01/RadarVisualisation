@@ -71,6 +71,10 @@ Initialise Spyder (Linux)
 ```sh
 spyder
 ```
+Alias on Linux for use conda(actualizar)
+```sh
+conda_start
+```
 
 for Visual studio is similar to spyder but you don't need to load a kernel to use it, just open in terminal after initializing myenv:
 
