@@ -32,10 +32,15 @@ conda activate myenv
 We install the specific versions of the packages. 
 
 ```sh
+conda install -c conda-forge pandas
+conda install -c conda-forge numpy
+conda install -c conda-forge filterpy
 conda install -c conda-forge proplot=0.9.7
 conda install -c conda-forge matplotlib=3.4.3
 conda install -c conda-forge xarray
 ```
+
+
 Now we have different options depending on the program to be used. In the case of Jupyter notebook:
 
 ```sh
