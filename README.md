@@ -38,6 +38,8 @@ conda install -c conda-forge filterpy
 conda install -c conda-forge proplot=0.9.7
 conda install -c conda-forge matplotlib=3.4.3
 conda install -c conda-forge xarray
+conda install -c conda-forge scipy
+
 ```
 
 
